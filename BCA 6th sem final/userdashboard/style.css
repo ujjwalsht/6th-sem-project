@@ -1,0 +1,173 @@
+/* Basic resets and body styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container styling */
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Navigation toggle button */
+#nav-toggle {
+    font-size: 24px;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
+}
+
+#nav-toggle:hover {
+    background: #0056b3;
+}
+
+/* Side navigation styling */
+ /* Ensure the sidenav is hidden initially */
+ .sidenav {
+    width: 250px;
+    position: fixed;
+    left: -250px;
+    transition: left 0.3s;
+}
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: -250px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main-content {
+    margin-left: 20px;
+    padding: 20px;
+    transition: margin-left 0.3s;
+    margin-top: 50px;
+    flex-grow: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+/* Headings styling */
+h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Content sections styling */
+#vehicle-list, #appointment-list, #profile {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logout form styling */
+#logout-form {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+#logout-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#logout-button:hover {
+    background-color: #e53935;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #main-content {
+        margin-left: 0;
+        margin-top: 70px;
+    }
+
+    #nav-toggle {
+        top: 10px;
+        left: 10px;
+    }
+
+    .sidenav {
+        top: 0;
+        left: -100%;
+    }
+}
+/* User info section */
+#user-info {
+    margin: 20px;
+    padding: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+}
+
+#user-info p {
+    margin: 10px 0;
+    color: #333;
+}
+
+#user-info p:first-child {
+    font-size: 22px;
+    font-weight: bold;
+    color: #007BFF;
+}
